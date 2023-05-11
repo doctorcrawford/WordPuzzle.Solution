@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WordPuzzle.Controllers
 {
-    public class WordsController : Controller
+    public class GuessController : Controller
     {
 
       // [HttpGet("/")]

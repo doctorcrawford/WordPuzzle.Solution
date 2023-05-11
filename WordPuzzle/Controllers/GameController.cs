@@ -8,15 +8,17 @@ namespace WordPuzzle.Controllers
   public class GameController : Controller
   {
     [HttpGet("/game")]
+    //goes to the game index
     public ActionResult Index()
     {
       List<Game> allGames = Game.GetAll();
       return View(allGames);
     }
-    [HttpGet("/game/new")]
-    public ActionResult New()
+    [HttpPost("/game")]
+    public ActionResult Create()
     {
-      return View();
+      Game newGame = new Game();
+      return RedirectToAction("Index");
     }
   }
 }
