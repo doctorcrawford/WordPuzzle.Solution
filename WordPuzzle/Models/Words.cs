@@ -14,7 +14,6 @@ namespace WordPuzzle.Models
     public Words(string guess)
     {
       Guess = guess;
-      AllGuesses.Add(this);
     }
     public static void GetWord()
     {

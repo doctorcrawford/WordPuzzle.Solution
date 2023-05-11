@@ -6,7 +6,7 @@ using System;
 namespace WordPuzzle.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class WordsTests
   {
     [TestMethod]
     public void GetWord_ReturnsRandomWordFromList_String()
